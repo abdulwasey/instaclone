@@ -66,17 +66,7 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
         >
           Sign up to see photos and videos from your friends.
         </h2>
-        <GithubLoginButton
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "100%",
-            color: "white",
-          }}
-          button
-        />
-        <Divider>OR</Divider>
+
         <form className="form-card__form" onSubmit={formik.handleSubmit}>
           <FormInput
             name="email"
@@ -143,7 +133,6 @@ const SignUpCard = ({ signUpStart, error, fetching }) => {
           </Link>
         </section>
       </Card>
-      <ViewOnGithubButton />
     </Fragment>
   );
 };
