@@ -71,11 +71,11 @@ const Header = memo(({ currentUser }) => {
               <Link style={{ marginRight: '1rem' }} to="/login">
                 <Button>Log In</Button>
               </Link>
-              <Link to="/signup">
+              {/* <Link to="/signup">
                 <h3 className="heading-3 heading--button color-blue">
                   Sign Up
                 </h3>
-              </Link>
+              </Link> */}
             </Fragment>
           )}
         </div>

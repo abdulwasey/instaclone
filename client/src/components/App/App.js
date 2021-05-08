@@ -28,7 +28,7 @@ const ActivityPage = lazy(() =>
   import('../../pages/ActivityPage/ActivityPage')
 );
 const LoginPage = lazy(() => import('../../pages/LoginPage/LoginPage'));
-const SignUpPage = lazy(() => import('../../pages/SignUpPage/SignUpPage'));
+// const SignUpPage = lazy(() => import('../../pages/SignUpPage/SignUpPage'));
 const HomePage = lazy(() => import('../../pages/HomePage/HomePage'));
 const NewPostPage = lazy(() => import('../../pages/NewPostPage/NewPostPage'));
 const ExplorePage = lazy(() => import('../../pages/ExplorePage/ExplorePage'));
@@ -92,7 +92,9 @@ export function UnconnectedApp({
     }
     return (
       <Fragment>
-        {pathname !== '/login' && pathname !== '/signup' && <Header />}
+        {pathname !== '/login' &&
+          // pathname !== '/signup' &&
+          <Header />}
         {renderModals()}
         {transitions.map(
           ({ item, props, key }) =>
@@ -104,7 +106,7 @@ export function UnconnectedApp({
         )}
         <Switch>
           <Route path="/login" component={LoginPage} />
-          <Route path="/signup" component={SignUpPage} />
+          {/* <Route path="/signup" component={SignUpPage} /> */}
           <ProtectedRoute exact path="/" component={HomePage} />
           <ProtectedRoute path="/settings" component={SettingsPage} />
           <ProtectedRoute path="/activity" component={ActivityPage} />
@@ -117,7 +119,7 @@ export function UnconnectedApp({
         </Switch>
         {pathname !== '/' && <Footer />}
         {pathname !== '/login' &&
-          pathname !== '/signup' &&
+          // pathname !== '/signup' &&
           pathname !== '/new' &&
           currentUser && <MobileNav currentUser={currentUser} />}
       </Fragment>

@@ -43,8 +43,8 @@ const LoginCard = ({
       style={
         modal
           ? {
-              padding: "2rem",
-            }
+            padding: "2rem",
+          }
           : {}
       }
     >
@@ -81,7 +81,7 @@ const LoginCard = ({
           Forgot password?
         </TextButton>
       </Card>
-      <Card>
+      {/* <Card>
         <section
           style={{
             display: "flex",
@@ -99,7 +99,7 @@ const LoginCard = ({
             </TextButton>
           </Link>
         </section>
-      </Card>
+      </Card> */}
       {/* <ViewOnGithubButton /> */}
     </div>
   );

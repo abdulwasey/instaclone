@@ -39,9 +39,9 @@ const MobileHeader = ({ children, backArrow, style, show, currentUser }) => {
             >
               Log In
             </Button>
-            <TextButton onClick={() => history.push('/signup')} bold blue>
+            {/* <TextButton onClick={() => history.push('/signup')} bold blue>
               Sign Up
-            </TextButton>
+            </TextButton> */}
           </div>
         </Fragment>
       )}
