@@ -23,7 +23,6 @@
 - Image hosting: <a href="https://cloudinary.com/">`Cloudinary`</a>
 
 ---
-
 ## Installation
 
 ### Clone
